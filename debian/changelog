@@ -1,4 +1,4 @@
-uw-imap (8:2007f~dfsg-2-gw1) stable; urgency=low
+uw-imap (8:2007f~dfsg-2+gw1) unstable; urgency=low
 
   * Use poll() instead of select().
 
