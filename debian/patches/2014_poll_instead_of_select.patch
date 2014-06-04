@@ -228,7 +228,7 @@ Index: uw-imap/src/osdep/unix/ssl_unix.c
 -      FD_ZERO (&efds);		/* handle errors too */
 -      FD_SET (sock,&fds);	/* set bit in selection vector */
 -      FD_SET (sock,&efds);	/* set bit in error selection vector */
-+      pfd.fd = soc;
++      pfd.fd = sock;
 +      pfd.events = POLLIN;
        errno = NIL;		/* block and read */
        do {			/* block under timeout */
