@@ -5,8 +5,9 @@ uw-imap (8:2007f~dfsg-3) unstable; urgency=low
   * 1005_poll.patch (new): Use poll(2) instead of select(2) to support
     more than 1024 file descriptors (Closes: #478193). Thanks to Ben
     Smithurst.
+  * Bump Standards-Version to 3.9.6.
 
- -- Magnus Holmgren <holmgren@debian.org>  Sun, 19 Oct 2014 22:36:47 +0200
+ -- Magnus Holmgren <holmgren@debian.org>  Sun, 19 Oct 2014 23:01:35 +0200
 
 uw-imap (8:2007f~dfsg-2) unstable; urgency=medium
 
