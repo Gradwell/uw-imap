@@ -24,7 +24,7 @@ Author: Magnus Holmgren <holmgren@debian.org>
  	 BASELDFLAGS="-L../c-client -lc-client $(PAMLDFLAGS) -lc" \
  	 ARRC="gcc --shared -Wl,-soname,libc-client.so.$(VERSION) -o" \
 -	 LIBRARIES="$(PAMLDFLAGS) $(EXTRALDFLAGS) $(SSLLDFLAGS) -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err" \
-+	 LIBRARIES="$(PAMLDFLAGS) $(EXTRALDFLAGS) $(SSLLDFLAGS) $(shell krb5-config.mit --cflags gssapi)" \
++	 LIBRARIES="$(PAMLDFLAGS) $(EXTRALDFLAGS) $(SSLLDFLAGS) $(shell krb5-config.mit --libs gssapi)" \
  	 RANLIB=true
  
  lnx:	# Linux non-shadow passwords

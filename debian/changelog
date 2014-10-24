@@ -1,3 +1,11 @@
+uw-imap (8:2007f~dfsg-4) unstable; urgency=medium
+
+  * 2012_krb5_multidev.patch: Fix typo mixing up --cflags and --libs
+    causing libc-client not to be linked to the kerberos libraries
+    (Closes: #766526).
+
+ -- Magnus Holmgren <holmgren@debian.org>  Fri, 24 Oct 2014 22:16:45 +0200
+
 uw-imap (8:2007f~dfsg-3) unstable; urgency=low
 
   * 2012_krb5_multidev.patch (new): Depend on krb5-multidev rather than
