@@ -126,7 +126,7 @@ common-install-arch::
 common-binary-post-install-arch:: debian/install-libs-stamp
 
 debian/install-libs-stamp:
-	d-shlibmove --commit \
+	d-shlibmove --commit --override s/libkrb5-dev/krb5-multidev/ \
 		--movedev "debian/tmp/usr/include/*" usr/include \
 		debian/tmp/usr/lib/libc-client.so
 	touch $@
