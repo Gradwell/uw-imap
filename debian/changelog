@@ -1,3 +1,23 @@
+uw-imap (8:2007f~dfsg-4) unstable; urgency=medium
+
+  * 2012_krb5_multidev.patch: Fix typo mixing up --cflags and --libs
+    causing libc-client not to be linked to the kerberos libraries
+    (Closes: #766526).
+  * Tell d-shlibmove to substitute krb5-multidev for libkrb5-dev.
+
+ -- Magnus Holmgren <holmgren@debian.org>  Fri, 24 Oct 2014 22:40:53 +0200
+
+uw-imap (8:2007f~dfsg-3) unstable; urgency=low
+
+  * 2012_krb5_multidev.patch (new): Depend on krb5-multidev rather than
+    libkrb5-dev (Closes: #745333). Thanks to Jelmer Vernooij.
+  * 1005_poll.patch (new): Use poll(2) instead of select(2) to support
+    more than 1024 file descriptors (Closes: #478193). Thanks to Ben
+    Smithurst.
+  * Bump Standards-Version to 3.9.6.
+
+ -- Magnus Holmgren <holmgren@debian.org>  Sun, 19 Oct 2014 23:01:35 +0200
+
 uw-imap (8:2007f~dfsg-2+gw2) unstable; urgency=low
 
   * Use poll() instead of select() in ssl_getdata function.

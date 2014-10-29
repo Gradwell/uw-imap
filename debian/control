@@ -2,13 +2,13 @@ Source: uw-imap
 Priority: optional
 Section: mail
 Maintainer: Magnus Holmgren <holmgren@debian.org>
-Standards-Version: 3.8.0
+Standards-Version: 3.9.6
 Build-Depends: cdbs (>= 0.4.72~),
  debhelper,
  dh-buildinfo,
  devscripts,
  libpam-dev,
- libkrb5-dev,
+ krb5-multidev (>= 1.12.1+dfsg-9),
  comerr-dev,
  libssl-dev,
  d-shlibs

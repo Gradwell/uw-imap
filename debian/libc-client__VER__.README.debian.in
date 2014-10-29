@@ -76,7 +76,7 @@ mbox driver
 This package has the mbox driver enabled which means that if there is a
 file in your $HOME directory called mbox it will be treated as your inbox
 and all mail in your system inbox (/var/mail/<your login>) will
-immediately be transfered there on access.
+immediately be transferred there on access.
 
 [Thanks to Brock Rozen for help with the above comments]
 
@@ -108,3 +108,5 @@ to exist currently.
 
 Jaldhar H. Vyas <jaldhar@debian.org>, Sun, 20 Oct 2002 11:23:00 -0400
 Updates: Jonas Smedegaard <dr@jones.dk>  Sat, 15 Mar 2003 21:10:00 +0100
+
+ -- Magnus Holmgren <holmgren@debian.org>, Sun, 19 Oct 2014 23:02:53 +0200
