@@ -8,7 +8,7 @@ Build-Depends: cdbs (>= 0.4.72~),
  dh-buildinfo,
  devscripts,
  libpam-dev,
- krb5-multidev (>= 1.12.1+dfsg-9),
+ krb5-multidev,
  comerr-dev,
  libssl-dev,
  d-shlibs
