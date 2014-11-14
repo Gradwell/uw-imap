@@ -7,3 +7,4 @@
 2010_disallow_escaping_home.patch
 2011_disable_version_check.patch
 2014_poll_instead_of_select.patch
+1005_poll.patch
